@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+}
+
+header{
+    display: flex;
+    background-color:black;
+    padding: 5px 5px0 5px;
+    justify-content: space-between;
+}
+
+header nav {
+    display: none;
+}
+
+#sessao-principal figure img{
+    width: 80%;
+    align-content: center;
+    margin: 0 auto;
+}
+
+header i {
+    color: white;
+    padding-top:5px;
+    padding-left: 8px;
+ }
+
+ header img{
+     height:56px;
+     margin-right: calc(50% - 44.15px);
+ }
+
+main{
+    padding: 16px;
+}
+
+#sessao-principal h2{
+    color: orangered;
+    font-size: 2rem;
+}
+
+#sessao-principal p{
+    color: gray;
+    padding-bottom: 20px;
+}
+
+#sessao-principal a{
+    background-color: orangered;
+    padding-bottom: 10px;
+
+}
+#elementos h3{
+    background-color: orangered;
+    color: white;
+} 
+
+#elementos article{
+    border: 1px solid rgb(196, 196, 196);
+
+}
+
+footer{
+    background-color: black;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+}
+
+footer img{
+    margin-top: -20px;
+}
