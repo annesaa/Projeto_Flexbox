@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*HEADER*/
+
+
+header{
+    display: flex;
+    background-color:black;
+    padding: 5px 5px 0 5px;
+    justify-content: space-between;
+    position: relative;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    padding: 0 10% 5px 10%;
+    background-color: black;
+    transition: left .7s;
+}
+
+header nav a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: .2s;
+}
+
+header input:checked ~ nav {
+    display: flex;
+    left: 0;
+}
+
+header nav a:hover {
+    padding-left: 10px;
+    color: white;
+    background-color:rgb(238, 103, 66);
+    border-radius: 3px;
+}
+
+header nav label {
+    text-align: right;
+    color: orangered;
+    opacity: 0;
+    transition: opacity 1s;
+    transition-delay: .5s;
+}
+
+header input:checked ~ nav>label {
+    opacity: 1;
+}
+
+header input{
+    display: none;
+}
+
+header i {
+    color:white;
+    padding-top:5px;
+    padding-left: 8px;
+    cursor: pointer;
+    font-size: 2rem;
+ }
+
+ header img{
+     height:56px;
+     margin-right: calc(50% - 44.15px);
+ }
+ 
+
+ /*MAIN*/
+
+main{
+    padding: 16px;
+}
+
+#sessao-principal figure img{
+    width: 80%;
+    align-content: center;
+    margin: 0 auto;
+}
+
+#sessão principal{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px dotted black;
+
+}
+
+#sessao-principal h2{
+    color: orangered;
+    font-size: 1.5rem;
+}
+
+#sessao-principal p{
+    color: gray;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+#sessao-principal {
+    padding-bottom: 25px;
+    border-bottom: 2px dotted grey;
+}
+
+#sessao-principal a{
+    padding: 10px 22px;
+    background-color: orangered;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#elementos h3{
+    background-color: orangered;
+    padding: 7px;
+    color: white;
+    font-size: 0.9rem;
+} 
+
+#elementos article{
+    border: 1px solid rgb(196, 196, 196);
+
+}
+
+#elementos article img{
+    float: left;
+    margin: 10px;
+    width: 50px;
+
+}
+
+#elementos article p{
+    font-size: 0.9rem;
+    color: gray;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+
+/*FOOTER*/
+
+footer{
+    background-color: black;
+}
+
+footer p{
+    color: gray;
+    text-align: center;
+    padding-top:2px;
+    font-size: 0.9rem;
+}
+
+footer img{
+    margin-top: -20px;
+    height: 30px;
+}
+
+footer #facebook{
+    padding-left: 15px;
+}
+
+main br{
+    padding-bottom: 10px;
+}
+
+/*TABLET*/
+
+@media screen and (min-width: 768px){
+    
+    /*HEADER*/
+
+    header{
+        height: 75px;
+        padding-top: 6px;
+    }
+
+    header img{
+        height: 58px;
+    }
+
+    /*MAIN*/
+
+    main{
+        padding: 30px;
+    }
+
+    #sessao-principal{
+        padding-bottom: 43px;
+    }
+
+    #sessao-principal figure img{
+        width: 90%;
+        padding-left: 30px;
+        padding-bottom: 12px;
+        margin: 0 auto;
+    }
+
+    #sessao-principal h2{
+        font-size: 2.6rem;
+    }
+
+    #sessao-principal p{
+        font-size: 1.5rem;
+    }
+
+    #sessao-principal a{
+        padding: 18px 41px;
+        font-size: 1.2rem;
+
+    }
+
+    #elementos article p{
+        font-size: 1.5rem;
+    }
+
+    #elementos article h3{
+        font-size: 1.3rem;
+        padding-left: 15px;
+        padding: 10px;
+    }
+
+    #elementos article img{
+        width: 60px;
+    }
+
+    /*FOOTER*/
+
+    footer{
+        height: 98px;
+    }
+    footer p{
+        font-size: 1.3rem;
+        padding-right: 40px;
+    }
+
+    footer img{
+        height: 45px;
+    }
+
+
+}
+
+
+/*DESKTOP LAPTOP*/
+
+@media screen and (min-width: 992px){
+
+    html{
+        /*border-left: black 5px solid;
+        border-right: black 5px solid;*/
+    }
+
+    main{
+        padding-bottom: 40px;
+        border-left: solid 5px black;
+        border-right: solid 5px black;
+    }
+
+
+    header, main, footer {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    header {
+        padding-bottom: 10px;
+        padding-top: 0;
+    }
+
+    header label {
+        display: none;
+    }
+
+    header img{
+        height: 60px;
+        margin-top: 10px;
+    }
+
+    header nav {
+        flex-direction: row;
+        justify-content: flex-start;
+        position: static;
+        margin-left: -95px;
+        padding: 0;
+    }
+
+    header nav a {
+        font-size: 0.8rem;
+        padding: 35px 20px 10px 20px;
+    }
+
+    header nav a:hover {
+        color: white;
+        padding-left: 20px;
+        border-radius: 0px 0px 8px 8px;
+        background-color: rgb(235, 106, 70);
+    }
+    #sessao-principal {
+        justify-content: space-between;
+        margin-top: 20px;
+        border-width: 2px;
+        padding-bottom: 35px;
+    }
+
+    #sessao-principal figure {
+        width: 50%;
+        min-width: 480px;
+    }
+
+    #sessao-principal figure img { 
+        height: 275px; 
+        padding-top: 25px;
+        float: left;
+        padding-right: 60px;
+        padding-left: -30px;
+
+    }
+
+    #sessao-principal a {
+        
+        float: right;
+    }
+
+    #sessao-principal div h2 {
+        margin-top: 0;
+        font-size: 1.6rem;
+        color: rgb(236, 91, 39);
+    }
+
+    #sessao-principal div p {
+        width: 90%;
+        margin-top: 15px;
+        font-size: 0.9rem;
+        line-height: 24px;
+        padding-left: 60px;
+    }
+
+    #sessao-principal div a {
+        font-size: 0.9rem;
+        margin-top: 15px;
+        padding: 10px 20px;
+    }
+
+    #elementos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 18px;
+    }
+
+    #elementos article { 
+        width: 32%; 
+        max-width: 303px;
+    }
+
+    #elementos article h3 {
+        padding:  10px;
+        font-size: 1rem;
+    }
+
+    #elementos article img { 
+        width: 65px;
+        margin: 10px; 
+        margin-right: 12px;
+        border: 1px dotted gray ;
+        padding: 5px;
+    }
+
+    #elementos article p {
+        padding: 10px;
+        font-size: 0.8rem;
+        padding-top: 1px;
+        line-height: 19px;
+    }
+
+    footer{
+        position: relative;
+        height: 60px;
+    }
+    
+    footer img { 
+        height: 33px;
+        margin-top: -20px;
+    }
+
+    footer p { 
+        font-size: 0.9rem;
+    }
+}
+
+
+/*DESKTOP*/
+
+@media screen and (min-width: 1200px){
+    header, main, footer{
+        max-width: 1200px;
+        margin: 0 auto;
+        max-height: 1200px;
+    }
+
+}
